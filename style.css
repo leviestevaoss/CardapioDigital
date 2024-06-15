@@ -30,7 +30,7 @@ a{
 
 .hamburguer_1{
     border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
+    background-color: #1e1f22c5;        
     margin-top: 10px;
     margin-right: 260px;
     margin-left: 260px;
@@ -59,7 +59,7 @@ a{
 .descricao_2{
     border: 1px solid rgba(219, 4, 4, 0);
     position: relative;
-    bottom: 100px;
+    bottom: 75px;
     width: 400px;
     color: white;
     display: inline-block;
