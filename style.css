@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body{
@@ -10,8 +13,15 @@ body{
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     font-family: Arial, Helvetica, sans-serif;
-    font-size:smaller;
-    font-weight: bolder;
+    text-align: center;
+}
+nav,a{
+    color: white;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fonte);
 }
 
 header{
@@ -21,127 +31,65 @@ header{
     padding: 10px;
 
 }
+
+:root{
+    --corBotoesH2Texto:orange;
+    --arrendondamento: 10px;
+    --fonte: "Comic", "cursive;";
+}
 a{
     color: white;
     margin: 0px 10px;
     text-decoration: none;
     
 }
-
-.hamburguer_1{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;        
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
+.logo{
+    width: 250px;
+    
 }
-.descricao_1{
-   border: 1px solid rgba(219, 4, 4, 0);
-   position: relative;
-   bottom: 100px;
-   width: 400px;
-   color: white;
-   display: inline-block;
-}
-/* --------------------------------------------------------------- */
-
-.hamburguer_2{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
-}
-
-.descricao_2{
-    border: 1px solid rgba(219, 4, 4, 0);
-    position: relative;
-    bottom: 75px;
+.imgProduto{
     width: 400px;
-    color: white;
-    display: inline-block;
- }
-/* ----------------------------------------------------------------------- */
 
-.hamburguer_3{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
 }
-.descricao_3{
-    border: 1px solid rgba(219, 4, 4, 0);
-    position: relative;
-    bottom: 80px;
-    width: 400px;
-    color: white;
-    display: inline-block;
-}
-/* ---------------------------------------------------------------- */
 
-.acompanhamento_1{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
+h2{
+    color: var(--corBotoesH2Texto);
+    text-align: center;
 }
-.descricao_4{
-    border: 1px solid rgba(219, 4, 4, 0);
-    position: relative;
-    bottom: 80px;
-    left: 40px;
-    width: 400px;
-    color: white;
-    display: inline-block;
-}
-/* ------------------------------------------------------------------ */
 
-.bebida_1{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
+h1{
+    text-transform: uppercase;
 }
-.descricao_5{
-    border: 1px solid rgba(219, 4, 4, 0);
-    position: relative;
-    bottom: 120px;
-    right: 30px;
-    width: 400px;
-    color: white;
-    display: inline-block;
-}
-/* -------------------------------------------------------------------- */
 
-.bebida_2{
-    border: 1px solid #1e1f229c;
-    background-color: #1e1f22c5;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 260px;
-    margin-left: 260px;
-    border-radius: 10px;
+.boxProduto{
+    background-color: rgba(37,37,37,0.8);
+    width: 850px;
+    margin: auto;
+    border-radius: var(--arrendondamento);
 }
-.descricao_6{
-    border: 1px solid rgba(219, 4, 4, 0);
-    position: relative;
-    bottom: 120px;
-    right: 28px;
-    width: 400px;
-    color: white;
+
+.boxImagem,.boxTexto{
     display: inline-block;
+    vertical-align: middle;
+    
+}
+.boxTexto{
+    width: 400px;
+    text-align: start;
+}
+
+h1,h2,h3{
+    margin: 10px 0px;
+}
+
+button{
+    color: white;
+    background: orange;
+    border-radius:var(--arrendondamento);
+    width: 150px;   
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
