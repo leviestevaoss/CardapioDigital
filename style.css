@@ -60,11 +60,19 @@ h2{
 h1{
     text-transform: uppercase;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .boxProduto{
     background-color: rgba(37,37,37,0.8);
+    display: flex;
     width: 850px;
-    margin: auto;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
     border-radius: var(--arrendondamento);
 }
 
