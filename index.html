@@ -51,7 +51,9 @@
                 para saciar sua fome!
                 </p>
             <button>Pedir</button>
-            <button data-bs-toggle="modal" data-="">Ver Detalhes</button>
+            <button class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver Detalhes
+            </button>
           </div>
         </div>
         <br />
@@ -74,7 +76,9 @@
             </p>
             <br/>
             <button>Pedir</button>
-            <button data-bs-toggle="modal" data-="">Ver Detalhes</button>
+            <button class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ver Detalhes
+            </button>
           </div>
         </div>
         <br>
@@ -95,16 +99,78 @@
                 de carne nobre, queijo derretido, cebola caramelizada e baccon.
                 Uma escolha irresistível!
               </p>
-              <br />
+              <br/>
               <button>Pedir</button>
-              <button data-bs-toggle="modal" data-="">Ver Detalhes</button>
+
+              <button class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver Detalhes
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Detalhes do Produto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="boxmodal">
+                        <h5 class="fs-5">Angus-Burguer</h5>
+                        <img src="imagens/burger01.png" alt="Angus-Burguer" class="w-25">
+                      </div>
+                      
+                      <h6 class="d-flex justify-content-center fs-5 text-dark ">Igredientes</h6>
+                      <div class="boxigre">
+                        <div class="boxexemple">
+                          <div class="text-dark">
+                            <img src="carne-moida.png" alt="Carne" class="igre">
+                            1x Carne
+                            :
+                            <button class="btn btn-warning btn-sm align-items-center">-</button>
+                          </div>
+                          <br>
+                          <div class="text-dark">
+                            <img src="cebola.png" alt="Cebola" class="igre">
+                            <p>
+                            1x Cebola
+                            </p>
+                            <button class="btn btn-warning btn-sm">-</button>
+                          </div>
+                          <br>
+                          <div class="text-dark">
+                            <img src="bacon.png" alt="Bacon" class="igre">
+                            <p>
+                            2x Bacon
+                            </p>
+                            <button class="btn btn-warning btn-sm">-</button>
+                          </div>
+                          <br>
+
+                          <div class="text-dark ">
+                            <img src="tomate.png" alt="Tomate" class="igre">
+                            <p>
+                            2x Tomate
+                            </p>
+                            <button class="btn btn-warning btn-sm">-</button>
+                            
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
       </section>
     </main>
     <br>    
     <section id="publicidade" class="container d-flex justify-content-center">
-        <div id="carroselPublicidade" class="carousel slide carousel-fade w-75" data-bs-ride="carousel">
+        <div id="carroselPublicidade" class="carousel slide carousel-fade w-50" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="imagens/Pub1.jpg" class="d-block w-100" alt="...">
@@ -185,6 +251,7 @@
         <button class="btn btn-secondary text-dark">Pagar</button>
       </div>
 
+      
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
